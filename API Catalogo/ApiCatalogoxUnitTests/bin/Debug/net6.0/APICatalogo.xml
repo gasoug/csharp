@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APICatalogo</name>
+    </assembly>
+    <members>
+        <member name="M:APICatalogo.Controllers.ProdutosController.Get(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id">Código do Produto</param>
+            <returns>Objetos Produto</returns>
+        </member>
+        <member name="M:APICatalogo.Controllers.ProdutosController.Post(APICatalogo.Models.Produto)">
+            <summary>
+            Inclui um novo Produto
+            </summary>
+            <remarks>
+            Exemplo de request:
+            
+                POST produtos
+                {
+                    "Nome":"produto tal"
+                    "Descricao":"descrição produto"
+                    "Preco": 3.89
+                    "ImagemUrl":"imagem.jpeg"
+                    "Estoque": 11
+                    "DataCadastro":"16/05/1995 23:00:00" 
+                    "CategoriaId":"1" 
+                }
+            </remarks>
+            <param name="produto">objeto Produto</param>
+            <returns>O objeto incluído</returns>
+            <remarks>Retorna um objeto Produto incluído</remarks>
+        </member>
+    </members>
+</doc>
